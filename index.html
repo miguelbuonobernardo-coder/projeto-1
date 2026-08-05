@@ -46,19 +46,31 @@
         <p class="artigo-autor">por: miguel buono</p>
         <p>bem-vindos ao meu novo noticiario do timao! so aqui as melhores noticias do corinthians</p>
         <button>❤️ <span>0</span></button>
+        <button>👍​ <span>0</span></button>
+        </div>
+        <img src="imagem-blog.png" alt="Logotipo quadrado para noticiário do Corinthians. Ao centro, destaca-se o escudo oficial do Sport Club Corinthians Paulista em vermelho, branco e preto. Abaixo do escudo, está escrito em letras maiúsculas brancas: "CORINTHIANS NOTÍCIAS DO TIMÃO O fundo é preto com linhas geométricas sutis em cinza-escuro, cercado por uma fina borda dourada. Na parte inferior central, há um pequeno ícone branco de um globo com antenas de transmissão.>
+        <div>
+            <h2> o primeiro post</h2>
+        <p class="artigo-autor">por: miguel buono</p>
+        <p>bem-vindos ao meu novo noticiario do timao! so aqui as melhores noticias do corinthians</p>
+        <button>❤️ <span>0</span></button>
+        <button>👍​ <span>0</span></button>
         </div>
         
       </main>
     </body>
     <script>
-        const botao = document.querySelector("button");
-        botao.addEventListener("click", botaoclicado);
+        const botoes = document.querySelectorAll("button");
 
-        function botaoclicado(){
-            console.log("fui clicado");
-            let texto = botao. querySelector("span");
-            texto.textContent++;
-        }
+        botoes.forEach( function(botao){
+            botao.addEventListener("click", botaoclicado);
+            function botaoclicado(){
+                console.log("fui clicado");
+                let texto = botao. querySelector("span");
+                texto.textContent++;
+            }
+        } )
+
 
     </script>
 </html>      
